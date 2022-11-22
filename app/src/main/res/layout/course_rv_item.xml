@@ -17,7 +17,38 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:id="@+id/idIVCourseImage"
+            android:id="@+id/idIVCourse"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_below="@id/idIVCourse"
+            android:layout_margin="3dp"
+            android:id="@+id/idTVCourseName"
+            android:padding="4dp"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@id/idTVPrice"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textSize="15sp"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:layout_below="@id/idIVCourse"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/idTVPrice"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             />
 
     </RelativeLayout>
