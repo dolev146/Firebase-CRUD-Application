@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/idRLBSheet"
     android:background="@color/blue_shade_1">
 
 
@@ -24,18 +25,72 @@
         android:layout_centerVertical="true"
         android:layout_margin="4dp"
         android:padding="4dp"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@mipmap/ic_launcher" />
 
     <TextView
         android:id="@+id/idTVDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/idIVCourse"
+        android:layout_below="@id/idTVCourseName"
         android:layout_margin="4dp"
-        android:padding="4dp"
+        android:layout_toRightOf="@id/idIVCourse"
+        android:padding="3dp"
         android:text="Description"
         android:textColor="@color/white"
-        android:layout_toRightOf="@id/idIVCourse"
         />
+    <TextView
+        android:id="@+id/idTVSuitedFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDescription"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idIVCourse"
+        android:padding="3dp"
+        android:text="Suited For"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/idTVPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVSuitedFor"
+        android:layout_margin="4dp"
+        android:layout_toRightOf="@id/idIVCourse"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:text="Price"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/idIVCourse"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="Edit Course"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/idBtnEdit"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:id="@+id/idBtnViewDetails" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>
